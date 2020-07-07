@@ -1,4 +1,7 @@
 package com.botfamily.demo.service;
 
-public interface OwnerRepo {
+import com.botfamily.demo.model.Owner;
+import org.springframework.data.repository.CrudRepository;
+
+public interface OwnerRepo extends CrudRepository<Owner, Long> {
 }
